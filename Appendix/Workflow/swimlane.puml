@@ -1,1 +1,47 @@
-
+@startuml CardamomLens_Swimlane_v1
+title CardamomLens — Initial Workflow (v1, to be updated after interviews)
+|Grader / Export QA|
+start
+:Draw sample from lot;
+:Place on plain background\nand capture photo;
+:Upload photo + Sample ID / Lot ID;
+|CardamomLens App|
+:Image-quality gate;
+if (Quality OK?) then (no)
+  :Ask for retake;
+  |Grader / Export QA|
+  :Retake photo;
+  |CardamomLens App|
+endif
+|Model Service|
+:Classify (Premium / Standard /\nLow_Grade / Defective);
+:Compute calibrated confidence;
+:Generate Grad-CAM;
+|CardamomLens App|
+:Apply routing rules\n(thresholds from config);
+if (Defective OR low confidence\nOR small margin?) then (yes)
+  :Recommend MANUAL REVIEW;\ndisable Accept;
+  |Grader / Export QA|
+  :Inspect sample manually;
+  :Record own category + reason;
+else (no)
+  :Recommend ACCEPT FOR SCREENING;
+  |Grader / Export QA|
+  if (Agree with AI?) then (yes)
+    :Confirm;
+  else (no)
+    :Override + mandatory reason;
+  endif
+endif
+|Audit Log|
+:Write record (time, image hash, model version,\nprobs, route, human decision, reason);
+|Supervisor / Senior Grader|
+if (Override or disagreement?) then (yes)
+  :Review in weekly queue;
+  :Relabel / adjust thresholds;
+else (no)
+endif
+|Grader / Export QA|
+:Human assigns OFFICIAL grade\n(outside the AI category set);
+stop
+@enduml
