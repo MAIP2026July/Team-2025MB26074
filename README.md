@@ -35,8 +35,8 @@ Team_26074/
 │   ├── Roadmap/roadmap.md             ← MVP → first revenue roadmap
 │   ├── Risk_Note/risk_note.md
 │   ├── Workflow/swimlane.puml         ← PlantUML swimlane (render at plantuml.com)
-│   ├── AI_Build_and_SelfEvaluation.md ← "give artifacts to AI: build + self-evaluate" step
-│   └── Screenshots_or_Video/          ← add screenshots after running the app
+│   ├── AI_Build_and_SelfEvaluation.md ← 
+│   └── Screenshots_or_Video/          ← 
 └── prototype/                         ← Streamlit app, routing logic, training script, tests
 ```
 
