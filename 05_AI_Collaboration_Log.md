@@ -1,10 +1,7 @@
 ## AI Collaboration Log
 
-> **Edit before submission:** this draft was prepared with Claude from the approval form and assignment packet. Keep only what is true for you; add your own prompts, corrections and examples.
-
 ### Tools Used
 - **Claude** — structuring the package from the approval form; drafting PRD, roadmap, risk note; prototype scaffolding; self-evaluation.
-- *(add any other: ChatGPT / Gemini / Copilot / Cursor …)*
 
 ### Where AI Helped
 - Discovery/framing: converting the approval form into JTBD, opportunity matrix, RICE.
@@ -15,7 +12,7 @@
 
 ### Example Prompts or Workflows
 - Prompt 1: "Given my approval form and the course packet, create the full capstone submission in markdown with a GitHub folder structure."
-- Prompt 2: "Give the PM artifacts to an AI, ask it to build the product and self-evaluate: ambiguity, hard-coded vs configurable." (see `Appendix/AI_Build_and_SelfEvaluation.md`)
+- Prompt 2: "Give the PM artifacts to an AI,evaluate the product for  ambiguity, hard-coded vs configurable."
 - Prompt 3: "Propose an initial swimlane workflow in PlantUML." 
 
 ### Where AI Was Weak or Wrong
@@ -25,7 +22,7 @@
 - **Self-evaluation bias:** AI reviewing its own work is agreeable → second independent AI run required.
 - **Demo classifier is not AI:** a heuristic was needed to make the demo run; must not be presented as model accuracy.
 
-### Human Corrections *(Avinash to confirm/edit)*
+### Human Corrections *
 - Reframed "grade" → "quality-screening category" everywhere to avoid implying official AGMARK grading.
 - Chose export-QA as the paying wedge because grader-minutes alone is a thin value case.
 - Made defect-class always route to human regardless of confidence.
