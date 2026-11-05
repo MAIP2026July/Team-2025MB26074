@@ -17,7 +17,7 @@ A decision-support copilot for auction-centre graders: upload a cardamom sample 
 ## Recommendation (summary)
 **Prototype → paid, tightly controlled pilot with an export QA team.** Do **not** scale until label-validity against AGMARK and false-accept rates are proven. See `01_Executive_Summary.md`.
 
-## Repository map (as per submission instructions)
+## Repository map 
 
 ```
 Team_26074/
