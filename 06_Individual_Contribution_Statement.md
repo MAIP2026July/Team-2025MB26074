@@ -12,8 +12,8 @@ This is an **individual project**. All roles were held by one person.
 | Prototype build | Avinash Kumar Jha | With Claude as coding assistant |
 | Business / risk | Avinash Kumar Jha | Assumptions marked (A) |
 | AI usage | See `05_AI_Collaboration_Log.md` | |
-| Validation | I reviewed all AI-generated content against the approval form and course packet; unverified claims marked as assumptions | *(edit if untrue)* |
+| Validation | I reviewed all AI-generated content against the approval form and course packet; unverified claims marked as assumptions |  |
 
 Declaration: I have disclosed meaningful AI assistance and have not presented raw AI output as unverified fact.
 
-Name: Avinash Kumar Jha · GitHub: `<your-github-id>` · Date: ________
+Name: Avinash Kumar Jha · GitHub: akvit2006` · Date: 05/11/2026
