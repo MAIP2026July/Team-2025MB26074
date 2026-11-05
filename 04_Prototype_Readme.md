@@ -25,7 +25,4 @@ Image classifier (MobileNetV2 transfer learning, temperature-scaled confidence) 
 ### Tests
 `pytest prototype/tests` — covers routing: confident accept, defect-forced review, low confidence, poor quality, model missing.
 
-### Links
-- Repository: https://github.com/MAIP2026July/Team_26074
-- Live demo: *(optional — deploy on Streamlit Community Cloud and paste link)*
-- Screenshots / Video: `Appendix/Screenshots_or_Video/` *(add after running)*
+
